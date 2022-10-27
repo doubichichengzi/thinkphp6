@@ -13,6 +13,9 @@ class Index extends BaseController
 {
     public function index()
     {
+        
+        $data=["succ"=>1,'status'=>1,'msg'=>1,'data'=>["username"=>'qxc']];
+        return json($data);
         echo  "我在8082222";
 
         print_r(Session::get("adminUserSession"));
